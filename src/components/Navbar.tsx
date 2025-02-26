@@ -1,28 +1,41 @@
 
 import { ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="font-display text-2xl">
+          <Link to="/" className="font-display text-2xl">
             Butcherly
-          </a>
+          </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#products" className="text-gray-600 hover:text-primary transition-colors">
+            <Link
+              to="/products"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
               Products
-            </a>
-            <a href="#categories" className="text-gray-600 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/categories"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
               Categories
-            </a>
-            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/about"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
               About
-            </a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-600 hover:text-primary transition-colors"
+            >
               Contact
-            </a>
+            </Link>
           </div>
           <Button variant="outline" size="icon" className="relative">
             <ShoppingCart className="w-5 h-5" />
