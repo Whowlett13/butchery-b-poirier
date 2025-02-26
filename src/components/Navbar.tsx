@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="font-display text-2xl">
-            Butcherly
+            Boucherie B. Poirier
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             <Link
