@@ -1,7 +1,6 @@
 
-import { ShoppingCart } from "lucide-react";
-import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { CartDrawer } from "./CartDrawer";
 
 export const Navbar = () => {
   return (
@@ -37,12 +36,7 @@ export const Navbar = () => {
               Contact
             </Link>
           </div>
-          <Button variant="outline" size="icon" className="relative">
-            <ShoppingCart className="w-5 h-5" />
-            <span className="absolute -top-2 -right-2 bg-secondary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
-              0
-            </span>
-          </Button>
+          <CartDrawer />
         </div>
       </div>
     </nav>
